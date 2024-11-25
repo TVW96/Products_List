@@ -1,0 +1,49 @@
+$black-bronze: #1f1d1b
+$american-bronze: #391802
+$bronze-gold: #E5A01D
+$beige: #F5F5DC
+$viewport: 100%
+    
+.productsList 
+    width: $viewport
+    font-size: 16px
+    display: grid
+    grid-gap: 10px
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr))
+    grid-auto-rows: repeat(auto-fill, minmax(auto, auto))
+    height: 80vh
+    width: auto
+    .product-Card:nth-last-child(3n)
+        grid-column-end: span 2
+    
+
+.product-Card
+    background-color: rgba($black-bronze, 0.2)
+    color: white
+    padding: 10px
+    border-radius: 5px
+    display: flex
+    align-items: center
+    width: 100%
+    height: 100%
+    object-fit: cover
+    h3
+        display: flex
+        color: $black-bronze
+        width: 100%
+        justify-content: flex-start
+
+    .product-Card-Description
+        bakcground-color: $american-bronze
+        width: auto
+        color: $beige
+        ul
+            list-style: none
+            line-height: 40px
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            padding-right: 5px
+            li
+                text-wrap: balance
+            
