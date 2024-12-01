@@ -2,6 +2,7 @@ import React from 'react';
 import "./ProductsList.sass";
 
 function ProductsList() {
+
     const products = [
         { id: 1, name: "Laptop", description: "High-performance laptop for professionals.", price: 1200 },
         { id: 2, name: "Macbook", description: "High-performance Apple laptop for professionals.", price: 2200 },
@@ -24,6 +25,8 @@ function ProductsList() {
             );
         });
     };
+
+
     return (
         <div className='productsList'>
             {productsList()}
